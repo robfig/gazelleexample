@@ -1,0 +1,12 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+gazelle(
+    name = "gazelle",
+    extra_args = [
+        "-repo_root",
+        "gocode/src/corp",
+        "gocode/src/corp",
+    ],
+)
